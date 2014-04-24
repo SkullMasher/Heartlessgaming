@@ -1,0 +1,16 @@
+{
+  "name": "Heartless_Gaming_Website",
+  "version": "0.0.4",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "jpegtran-bin": "0.2.0",
+    "grunt-contrib-imagemin": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-lib-phantomjs": "~0.3.1",
+    "grunt-html-inspector": "~0.1.4"
+  }
+}

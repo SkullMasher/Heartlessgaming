@@ -1,0 +1,301 @@
+@import "compass";
+
+/* Variables générales */
+
+$orange:#282828;
+$green:#81b14d;
+$blue:#4dadb1;
+$box:#eceae0;
+$bg:#dbd5c5;
+$gris:#444444;
+$encoregris:#cacaca;
+$grisfonce:#282828;
+
+/* Mixin */
+
+@mixin box($color) {
+	background: $color;
+	@include box-shadow(#61605d -2px 2px 13px 2px inset);
+	@include border-radius(15px);
+	// height: 380px;
+	width: 200px;
+	padding: 15px;
+	text-align: center; 
+	display: table-cell;
+	margin: 0 auto;
+}
+
+@mixin box-content($color) {
+	@include box-shadow(#5a7b35 -2px 2px 13px 2px inset);
+	@include border-radius(5px);
+	height: 180px;
+	width: 210px;
+	background: $color;
+	margin: -70px auto 0;
+	text-align: center;
+} 
+
+@mixin text-content($color) {
+	color: $color;
+	margin: 20px auto 0;
+	height: 70px;
+	text-align: center;
+}
+
+@mixin button($color) {
+	@include box-shadow(#5a7b35 0px 0px 0px 0px inset);
+	@include border-radius(10px);
+	width: 150px;
+	height: 30px;
+	background: $color;
+	text-align: center;
+	margin-top: 60px;
+}
+
+@mixin price($color) {
+	@include box-shadow(black 1px 1px 10px 1px inset);
+	@include border-radius(50%);
+	background: $color;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+@mixin titlehome($color) {
+	background: $color;
+	@include box-shadow(#212121 -2px 2px 13px 2px inset);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	width: 100%;
+	padding: 15px;
+	text-align: center; 
+}
+
+@mixin box-content($color) {
+	background: $color;
+	@include box-shadow(#61605d -2px 2px 13px 2px inset);
+	height: 250px;
+	width: 500px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0 auto;
+}
+
+body {
+	background: $bg;
+	min-width: 800px;
+}
+/* HAAAA4444aaaxxxx */
+
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -55px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 55px; /* '.push' must be the same height as 'footer' */
+}
+
+
+/* Header */
+
+#flash {
+	background-color: rgba(0, 0, 0, 0.5);
+	// @include opacity(0.3);
+	@include border-radius;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+#flash p {
+	padding: 2%;
+	color: white;
+}
+
+.jumbotron {
+	@include box-shadow(black 2px 2px 10px);
+	background-color: $orange;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 200px;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: $encoregris;
+	text-decoration: none;
+}
+
+header small {
+	font-size: 12px;
+	position: absolute;
+	font-size: 50%;
+	top: 90px;
+	left: 148px;
+}
+
+header h1 {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	text-shadow: -1px 0px 3px white;
+	font-size: 63px;
+}
+
+/* Navbar */
+
+nav {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+/* Box & Color*/
+
+
+
+/* Menu */
+#menu-container {
+	display: table;
+	width: 100%;
+}
+
+#menu-web, #menu-game, #menu-home {
+	display: table-cell;
+	width: 33%;
+	text-align: center;
+	font-size: 20px;
+	padding: 1% 0 0;
+}
+
+#menu-web p, #menu-home p {
+	box-shadow: -1px 0 0 rgba(0,0,0,0.1) inset, -1px 0 0 rgba(255,255,255,0.1);
+}
+
+#menu-web a, #menu-game a, #menu-home a {
+	text-decoration: none;
+	color: black;
+}
+
+#menu-web a:hover, #menu-game a:hover, #menu-home a:hover {
+	color: $gris
+}
+
+/* Page  */
+
+.title-heberg p, .title-migration p {
+	font-size: 20px;
+	color: white;
+}
+
+.heberg-content p, .migration-content p {
+	font-size: 15px;
+	color: black;
+	text-align: center;
+	padding-top: 20px;
+	line-height: 12px;
+}
+
+#slide-web {
+	width: 1050px;
+	margin: 50px auto 0;
+}
+
+.heberg-container, .migration-container { 	
+	display: inline-block;
+}
+
+.migration-container {
+	position: relative;
+	margin-left: 45px;
+}
+
+.heberg-container, .migration-container {
+	width: 500px;
+}
+
+.text-migration, .text-heberg {
+	height: 180px;
+	padding-top: 15px;
+}
+
+#offre-migration, #offre-heberg {
+	font-size: 20px;
+	color: darkred;
+}
+
+.migration-button, .heberg-button {
+	margin-left: 175px;
+}
+
+/* Box et color */
+
+.title-heberg{ @include titlehome($gris);
+}
+.title-migration{ @include titlehome($gris);
+}
+.heberg-content{@include box-content($box);}
+.migration-content{@include box-content($box);}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 12px;
+	padding-top: 15px;
+}
+
+#slide-footer {
+	background: $grisfonce;
+	color: white;
+}
+
+#pcenter {
+	// display: inline-block;
+	text-align: center;
+}
+
+#pcenter a {
+	color: white;
+}
+
+#pcenter a:hover {
+	text-decoration: none;
+	color: $encoregris;
+}

@@ -1,0 +1,262 @@
+@import "compass";
+
+// Global vars
+$default-border-radius : 5px;
+
+/* Variables générales */
+
+$orange:#282828;
+$green:#81b14d;
+$blue:#4dadb1;
+$box:#eceae0;
+$bg:#dbd5c5;
+$gris:#444444;
+$encoregris:#cacaca;
+$grisfonce:#282828;
+
+body {
+	min-width: 800px;
+}
+
+.modal {
+	color: black;
+}
+
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -55px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 55px; /* '.push' must be the same height as 'footer' */
+}
+
+/* Header */
+
+#flash {
+	background-color: rgba(0, 0, 0, 0.5);
+	// @include opacity(0.3);
+	@include border-radius;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+#flash p {
+	padding: 2%;
+	color: white;
+}
+
+.jumbotron {
+	@include box-shadow(black 2px 2px 10px);
+	background-color: #282828;
+	color: white;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 200px;
+}
+
+header {
+	white-space:nowrap;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: $encoregris;
+	text-decoration: none;
+}
+
+header small {
+	font-size: 12px;
+	position: absolute;
+	font-size: 50%;
+	top: 90px;
+	left: 148px;
+}
+
+header h1 {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+	text-shadow: -1px 0px 3px white;
+	font-size: 63px;
+}
+
+/*Navbar*/
+
+nav {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+/* Tab navigation bar */
+#location {
+	display: table;
+	position: absolute;
+	top: 270px;	left: 0px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* JS */
+
+#form-success {
+	font-size: 10px;
+}
+
+#form-success strong {
+	font-size: 20px;
+}
+
+.tabfocus {
+	display: table-cell;
+	width: 33%;
+background: #606060; /* Old browsers */
+background: -moz-linear-gradient(top,  #606060 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606060), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #606060 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #606060 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #606060 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #606060 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.tabfocus p {
+	color: black;
+}
+
+.tabblur {
+	display: table-cell;
+	background-color: #666666;
+	width: 33%;
+	background: #666666; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 0%, #666666 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 0%,#666666 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 0%,#666666 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 0%,#666666 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 0%,#666666 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#666666',GradientType=0 ); /* IE6-9 */
+}
+
+.tabactive {
+	display: table-cell;
+	background-color: #353535;
+	width: 33%;
+	background: #353535; /* Old browsers */
+	background: -moz-linear-gradient(top, #282828 0%, #4f4f4f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#282828), color-stop(100%,#4f4f4f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #282828 0%,#4f4f4f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #282828 0%,#4f4f4f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #282828 0%,#4f4f4f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #282828 0%,#4f4f4f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#4f4f4f',GradientType=0 ); /* IE6-9 */
+}
+
+.tabfocus p, .tabactive p, .tabblur p {
+	padding-top: 4%;
+	text-shadow:0 0 5px black;
+}
+
+/*Carousel*/
+
+.carousel-inner {
+	margin-top: 50px;
+}
+
+.item img {
+	width: 100%;
+	max-height: 62%;
+	min-height: 60.15%;
+}
+
+.carousel-caption table {
+	margin: 10% auto;
+}
+
+.carousel-caption table tr td {
+padding: 2% 2%;
+}
+
+/* Menu */
+#menu-container {
+	display: table;
+	width: 100%;
+}
+
+#menu-web, #menu-game, #menu-home {
+	display: table-cell;
+	width: 33%;
+	text-align: center;
+	font-size: 20px;
+	padding: 1% 0 0;
+}
+
+#menu-web p, #menu-home p {
+	box-shadow: -1px 0 0 rgba(0,0,0,0.1) inset, -1px 0 0 rgba(255,255,255,0.1);
+}
+
+#menu-web a, #menu-game a, #menu-home a {
+	text-decoration: none;
+	color: black;
+}
+
+#menu-web a:hover, #menu-game a:hover, #menu-home a:hover {
+	color: $gris
+}
+
+/* footer */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 12px;
+	padding-top: 15px;
+}
+
+#slide-footer {
+	background: $grisfonce;
+	color: white;
+}
+
+#pcenter {
+	// display: inline-block;
+	text-align: center;
+}
+
+#pcenter a {
+	color: white;
+}
+
+#pcenter a:hover {
+	text-decoration: none;
+	color: $encoregris;
+}

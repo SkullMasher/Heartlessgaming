@@ -1,0 +1,228 @@
+/*Clearfix*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+/*Stickyfooter*/
+
+* {
+	margin: 0;
+}
+
+html, body {
+	min-width: 1100px;
+	max-width: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+	height: 60px; /* .push must be the same height as .footer */
+}
+
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+/*Header*/
+
+.jumbotron {
+	background-color: #282828;
+	color: white;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 180px;
+}
+
+header {
+	white-space:nowrap;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+header small {
+	font-size: 12px;
+	position: absolute;
+	font-size: 50%;
+	top: 125px;
+	left: 148px;
+}
+
+header h1 {
+	position: absolute;
+	top: 55px;
+	left: 100px;
+	text-shadow: -1px 0px 3px white;
+	font-size: 63px;
+}
+
+/*Navbar*/
+
+nav {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+/*Galery*/
+
+#galery {
+	width: 100%;
+	height: 25px;
+	background-color: #cacaca;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	text-shadow: -1px 0px 1px grey;
+}
+
+/*Table*/
+
+#table-galery {
+	display: table;
+	width: 100%;
+}
+
+#navigation, .image {
+	display: table-cell;
+	height: 400px;
+}
+
+#navigation {
+	width: 15%;
+	padding-left: 3%;
+	/*background-color: green;*/
+}
+
+.box-nav {
+	height: 10%;
+	background-color: #444444;
+	text-align: center;
+	color: white;
+	padding-top: 3.5%;
+	text-shadow: 1px 0px 2px black;
+}
+
+.category {
+	background-color: #cacaca;
+	height: 88.25%;
+}
+
+.category p{
+	padding-left: 4%;
+	margin-top: 8%;
+	background-color: #444444;
+	color: white;
+	vertical-align: middle;
+}
+
+.buttons button {
+	margin-top: 5%;
+	margin-left: 6.5%;
+}
+
+.image {
+	width: 85%;
+}
+
+.box-image {
+	background-color: #cacaca;
+	margin-left: 10%;
+	width: 80%;
+	margin-top: 4%;
+	height: 88%;
+	box-shadow: 1px 0px 1px grey;
+}
+
+/*myCarousel*/
+.fuckingBUG {
+	text-align: center;
+	color: black;
+}
+
+.item img {
+	width: 100%;
+	max-height: 90%;
+	min-height: 90%;
+}
+
+.carousel-caption p {
+	color: white;
+	width: 170%;
+	background-color: #444444;
+	box-shadow: 1px 0px 1px grey;
+	opacity: 0.5;
+	margin-left: -188px;
+	height: 50px;
+	margin-bottom: -30px;
+}
+
+/*Footer*/
+
+footer p {
+	display: inline-block;
+	margin-right: 6px;
+	padding-top: 1.75%;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color:grey;
+	text-decoration: none;
+}
+
+footer {
+	clear: both;
+	background-color: #282828;
+	text-align: right;
+}
