@@ -1,7 +1,7 @@
 Heartlessgaming
 ===============
 
-The code that powers [heartlessgaming.com](www.heartlessgaming.com).
+The code that powers [heartlessgaming.com](http://heartlessgaming.com).
 
 Hello there, this is my very first real website for my loving gaming community it has been done in two weeks with my good friend [Neko-cat](https://github.com/Neko-cat). During those two weeks we have tried to use awesome techs like compass, grunt and bootstrap.
 
