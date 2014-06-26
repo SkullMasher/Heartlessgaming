@@ -220,7 +220,7 @@
 							$tsstatus->useServerPort(9987);
 							$tsstatus->imagePath = "tsstatus/img/";
 							$tsstatus->timeout = 2;
-							$tsstatus->setLoginPassword("tsstatus", "LVkgnYgP");
+							$tsstatus->setLoginPassword("tsstatus", "topkek");
 							$tsstatus->setCache(10);
 							$tsstatus->hideEmptyChannels = true;
 							$tsstatus->hideParentChannels = false;
